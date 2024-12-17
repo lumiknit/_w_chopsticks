@@ -227,6 +227,15 @@ export class Game {
     }
     if (unknowns.length > 0)
       return unknowns[Math.floor(Math.random() * unknowns.length)];
-    return allowed[Math.floor(Math.random() * allowed.length)];
+	// Find max depth
+	let i = 0;
+	for (let j = 1; j < allowed.length; j++) {
+		if (
+			table[this.action(state, allowed[j])!]!.depth >
+			table[this.action(state, allowed[i])!]!.depth
+		)
+			i = j;
+	}
+    return allowed[i];
   }
 }

@@ -166,10 +166,10 @@ const GameView: Component<Props> = () => {
           {[...Array(game.maxCount).keys()].map((i) => (
             <button
               class="secondary"
-              disabled={!humanTurn() || !moveIsAvailable(i)}
-              onClick={() => handleAction(i)}
+              disabled={!humanTurn() || !moveIsAvailable(game.maxCount - i - 1)}
+              onClick={() => handleAction(game.maxCount - i - 1)}
             >
-              Left to {i}
+              Left to {game.maxCount - i - 1}
             </button>
           ))}
         </div>
