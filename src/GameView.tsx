@@ -30,7 +30,7 @@ const historyToString = (history: History) => {
   }
 };
 
-const GameView: Component<Props> = (props) => {
+const GameView: Component<Props> = () => {
   const game = new Game(5);
   const table = game.table();
   const [humanTurn, setHumanTurn] = createSignal(true);
@@ -183,7 +183,7 @@ const GameView: Component<Props> = (props) => {
       <div>
         <h2> History </h2>
         <ol>
-          {history().map((s, i) => (
+          {history().map(s => (
             <li>{historyToString(s)}</li>
           ))}
         </ol>

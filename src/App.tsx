@@ -1,8 +1,7 @@
 import "@picocss/pico/css/pico.min.css";
 
 import { Toaster } from "solid-toast";
-import { Game } from "./game";
-import { createSignal, For, Show } from "solid-js";
+import { createSignal, Show } from "solid-js";
 import GameView from "./GameView";
 import TableView from "./TableView";
 

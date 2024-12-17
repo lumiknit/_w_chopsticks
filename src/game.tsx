@@ -105,7 +105,6 @@ export class Game {
     if (tbl[state] !== undefined) return false;
     let wins: Move[] = [];
     let unknowns: Move[] = [];
-    let nextMove: Move = "end";
     let moveOptions: Move[] = [];
     for (const move of this.allMoves) {
       const next = this.action(state, move);
