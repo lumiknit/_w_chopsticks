@@ -13,6 +13,12 @@ function App() {
     <>
       <Toaster />
       <main class="container">
+        <h1> Chopstick Game </h1>
+
+        <a href="https://github.com/lumiknit/_w_chopsticks">
+         🔗 Github (Description)
+        </a>
+
         <GameView />
 
         <h1> All Possible Cases </h1>

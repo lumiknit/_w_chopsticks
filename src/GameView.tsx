@@ -100,8 +100,6 @@ const GameView: Component<Props> = (props) => {
 
   return (
     <div>
-      <h1>Game</h1>
-
       <div class="board">
         <h2>
           CPU Player
