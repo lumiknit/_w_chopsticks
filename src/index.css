@@ -1,0 +1,16 @@
+table {
+  font-size: 12px !important;
+}
+
+td {
+  padding: 0.125rem !important;
+}
+
+.half {
+  display: flex;
+  flex-direction: row;
+}
+
+.board code {
+  font-size: 2rem;
+}
